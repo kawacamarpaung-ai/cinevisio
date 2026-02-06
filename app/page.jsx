@@ -11,9 +11,9 @@ export default function About() {
       <div className="bg-gradient-to-b from-purple-900/50 to-slate-900 py-16">
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-3xl md:text-4xl font-extrabold mb-3 text-orange-400">
-            Cinevisio: Your Ultimate Movie & TV Database
+            Cinevisio Your Ultimate Movie & TV Database
             <span className="block text-xl md:text-4xl font-extrabold mt-2 text-orange-400">
-              Watch, Stream, and Discover Cinema
+              Watch Stream and Discover Cinema
             </span>
           </h1>
           <p className="text-xl md:text-2xl text-gray-300 mb-8 max-w-4xl mx-auto">
