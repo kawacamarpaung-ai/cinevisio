@@ -5,6 +5,21 @@ import Link from 'next/link';
 import { FaHome, FaFilm, FaTv, FaSearch, FaStar, FaUsers, FaGlobe, FaUser, FaCalendar, FaTrophy } from 'react-icons/fa';
 
 export default function About() {
+  const genres = [
+    { name: 'Action', link: '/movie/genre/action', color: 'text-orange-300' },
+    { name: 'Adventure', link: '/movie/genre/adventure', color: 'text-blue-300' },
+    { name: 'Sci-Fi', link: '/movie/genre/science-fiction', color: 'text-purple-300' },
+    { name: 'Anime', link: '/movie/genre/animation', color: 'text-pink-300' },
+    { name: 'Crime', link: '/movie/genre/crime', color: 'text-yellow-300' },
+    { name: 'Horror', link: '/movie/genre/horror', color: 'text-red-300' },
+    { name: 'Comedy', link: '/movie/genre/comedy', color: 'text-green-300' },
+    { name: 'Romance', link: '/movie/genre/romance', color: 'text-pink-400' },
+    { name: 'Thriller', link: '/movie/genre/thriller', color: 'text-indigo-300' },
+    { name: 'Mystery', link: '/movie/genre/mystery', color: 'text-gray-300' },
+    { name: 'War', link: '/movie/genre/war', color: 'text-amber-300' },
+    { name: 'Fantasy', link: '/movie/genre/fantasy', color: 'text-teal-300' },
+  ];
+
   return (
     <div className="min-h-screen bg-slate-900 text-gray-300">
       {/* Hero Section */}
@@ -60,7 +75,7 @@ export default function About() {
                   <strong>Cinevisio</strong> is America's premier movie database and streaming guide platform. Whether you want to <strong>watch movies online</strong>, <strong>stream TV series</strong>, or find <strong>free movie streaming</strong> options, we provide comprehensive information across all major platforms including <strong>Netflix</strong>, <strong>Disney+</strong>, <strong>Prime Video</strong>, HBO Max, Hulu, and more. Our database helps you discover where to watch content in <strong>HD quality</strong>, track <strong>box office</strong> performance, and explore detailed information about your favorite films and shows.
                 </p>
                 <p>
-                  We specialize in helping users find exactly what to watch across all genres. Love <strong>action</strong> movies? We've got the latest blockbusters. Prefer <strong>adventure</strong> or <strong>sci-fi</strong>? Explore our curated collections. Looking for <strong>anime</strong> series, <strong>crime mystery</strong> thrillers, <strong>drakor</strong> (Korean dramas), intense <strong>drama</strong>, chilling <strong>horror</strong>, heartwarming <strong>romance</strong>, suspenseful <strong>thriller</strong>, historical <strong>war</strong> films, or classic <strong>western</strong> movies? Cinevisio has you covered with detailed genre pages and personalized recommendations.
+                  We specialize in helping users find exactly what to watch across all genres. Love <strong>action</strong> movies? We've got the latest blockbusters. Prefer <strong>adventure</strong> or <strong>sci-fi</strong>? Explore our curated collections. Looking for <strong>anime</strong> series, <strong>crime mystery</strong> thrillers, intense <strong>drama</strong>, chilling <strong>horror</strong>, heartwarming <strong>comedy</strong>, suspenseful <strong>thriller</strong>, intriguing <strong>mystery</strong>, historical <strong>war</strong> films, or magical <strong>fantasy</strong>? Cinevisio has you covered with detailed genre pages and personalized recommendations.
                 </p>
               </div>
             </div>
@@ -75,7 +90,7 @@ export default function About() {
               </span>
             </h2>
             
-            <div className="space-y-6 text-gray-400">
+            <div className="space-y-6 text-gray-400 text-justify">
               <h3 className="text-2xl font-semibold text-blue-300 mb-4">What is Cinevisio?</h3>
               
               <p>
@@ -98,10 +113,9 @@ export default function About() {
                 <li>• <strong>Sci-Fi & Fantasy</strong>: Space operas, futuristic worlds, and magical realms</li>
                 <li>• <strong>Anime & Animation</strong>: Japanese anime, animated features, and family-friendly content</li>
                 <li>• <strong>Crime Mystery & Thriller</strong>: Whodunits, police procedurals, and suspenseful stories</li>
-                <li>• <strong>Drakor & Drama</strong>: Korean dramas, emotional storytelling, and character-driven narratives</li>
-                <li>• <strong>Horror & Supernatural</strong>: Scary movies, psychological thrillers, and paranormal content</li>
-                <li>• <strong>Romance & Comedy</strong>: Love stories, romantic comedies, and heartwarming tales</li>
-                <li>• <strong>War & Western</strong>: Historical battles, military dramas, and cowboy classics</li>
+                <li>• <strong>Comedy & Drama</strong>: Hilarious comedies, emotional storytelling, and character-driven narratives</li>
+                <li>• <strong>Horror & Mystery</strong>: Scary movies, psychological thrillers, and paranormal content</li>
+                <li>• <strong>War & Historical</strong>: Historical battles, military dramas, and epic war stories</li>
               </ul>
 
               <h3 className="text-2xl font-semibold text-blue-300 mb-4">Box Office & Popularity Tracking</h3>
@@ -130,7 +144,7 @@ export default function About() {
               <ul className="ml-6 space-y-2">
                 <li>• <strong>Real-time streaming availability</strong> across all major platforms</li>
                 <li>• <strong>Personalized recommendations</strong> based on your viewing preferences</li>
-                <li>• <strong>Comprehensive genre coverage</strong> from action to western</li>
+                <li>• <strong>Comprehensive genre coverage</strong> from action to fantasy</li>
                 <li>• <strong>Box office and trending data</strong> to stay current</li>
                 <li>• <strong>Free and premium streaming guides</strong> for budget-conscious viewers</li>
                 <li>• <strong>Quality information</strong> including HD, 4K, and audio formats</li>
@@ -159,7 +173,7 @@ export default function About() {
               <div className="bg-gray-700/50 p-6 rounded-xl text-center">
                 <FaTv className="text-4xl text-orange-400 mx-auto mb-4" />
                 <h3 className="text-xl font-semibold mb-3">Stream TV Series</h3>
-                <p className="text-gray-400">Complete episode guides and streaming info for drama, anime, drakor, crime, and all popular genres.</p>
+                <p className="text-gray-400">Complete episode guides and streaming info for drama, anime, comedy, crime, and all popular genres.</p>
               </div>
               <div className="bg-gray-700/50 p-6 rounded-xl text-center">
                 <FaUser className="text-4xl text-orange-400 mx-auto mb-4" />
@@ -174,7 +188,7 @@ export default function About() {
               <div className="bg-gray-700/50 p-6 rounded-xl text-center">
                 <FaTrophy className="text-4xl text-orange-400 mx-auto mb-4" />
                 <h3 className="text-xl font-semibold mb-3">Top Rankings</h3>
-                <p className="text-gray-400">Discover highest-rated movies and series by genre: action, horror, romance, thriller, and more.</p>
+                <p className="text-gray-400">Discover highest-rated movies and series by genre: action, horror, comedy, thriller, and more.</p>
               </div>
               <div className="bg-gray-700/50 p-6 rounded-xl text-center">
                 <FaSearch className="text-4xl text-orange-400 mx-auto mb-4" />
@@ -217,42 +231,20 @@ export default function About() {
               Explore Popular Genres
             </h3>
             <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4 text-center">
-              <div className="bg-gray-700/50 p-4 rounded-lg hover:bg-gray-600/50 transition">
-                <div className="font-semibold text-orange-300">Action</div>
-              </div>
-              <div className="bg-gray-700/50 p-4 rounded-lg hover:bg-gray-600/50 transition">
-                <div className="font-semibold text-blue-300">Adventure</div>
-              </div>
-              <div className="bg-gray-700/50 p-4 rounded-lg hover:bg-gray-600/50 transition">
-                <div className="font-semibold text-purple-300">Sci-Fi</div>
-              </div>
-              <div className="bg-gray-700/50 p-4 rounded-lg hover:bg-gray-600/50 transition">
-                <div className="font-semibold text-pink-300">Anime</div>
-              </div>
-              <div className="bg-gray-700/50 p-4 rounded-lg hover:bg-gray-600/50 transition">
-                <div className="font-semibold text-yellow-300">Crime</div>
-              </div>
-              <div className="bg-gray-700/50 p-4 rounded-lg hover:bg-gray-600/50 transition">
-                <div className="font-semibold text-red-300">Horror</div>
-              </div>
-              <div className="bg-gray-700/50 p-4 rounded-lg hover:bg-gray-600/50 transition">
-                <div className="font-semibold text-green-300">Drama</div>
-              </div>
-              <div className="bg-gray-700/50 p-4 rounded-lg hover:bg-gray-600/50 transition">
-                <div className="font-semibold text-pink-400">Romance</div>
-              </div>
-              <div className="bg-gray-700/50 p-4 rounded-lg hover:bg-gray-600/50 transition">
-                <div className="font-semibold text-indigo-300">Thriller</div>
-              </div>
-              <div className="bg-gray-700/50 p-4 rounded-lg hover:bg-gray-600/50 transition">
-                <div className="font-semibold text-gray-300">Drakor</div>
-              </div>
-              <div className="bg-gray-700/50 p-4 rounded-lg hover:bg-gray-600/50 transition">
-                <div className="font-semibold text-amber-700">Western</div>
-              </div>
-              <div className="bg-gray-700/50 p-4 rounded-lg hover:bg-gray-600/50 transition">
-                <div className="font-semibold text-amber-300">War</div>
-              </div>
+              {genres.map((genre, index) => (
+                <Link 
+                  key={index} 
+                  href={genre.link}
+                  className="bg-gray-700/50 p-4 rounded-lg hover:bg-gray-600/50 transition flex flex-col items-center justify-center group"
+                >
+                  <div className={`font-semibold ${genre.color} group-hover:scale-105 transition-transform`}>
+                    {genre.name}
+                  </div>
+                  <div className="text-xs text-gray-400 mt-1 opacity-0 group-hover:opacity-100 transition-opacity">
+                    Browse {genre.name} →
+                  </div>
+                </Link>
+              ))}
             </div>
           </section>
 
@@ -276,7 +268,7 @@ export default function About() {
               </Link>
             </div>
             <p className="mt-8 text-gray-400 max-w-3xl mx-auto">
-              <strong>Cinevisio</strong> - Your ultimate guide to watch movies online, stream TV shows, find free streaming options, track box office results, and explore content across Netflix, Disney+, Prime Video and more in HD quality. Discover action, adventure, sci-fi, anime, crime, drakor, drama, horror, romance, thriller, war, western, and all your favorite genres.
+              <strong>Cinevisio</strong> - Your ultimate guide to watch movies online, stream TV shows, find free streaming options, track box office results, and explore content across Netflix, Disney+, Prime Video and more in HD quality. Discover action, adventure, sci-fi, anime, crime, drama, horror, comedy, thriller, mystery, war, fantasy, and all your favorite genres.
             </p>
           </section>
         </div>

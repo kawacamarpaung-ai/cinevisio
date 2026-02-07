@@ -6,12 +6,11 @@ import AdsterraLayoutWrapper from '../components/layout/AdsterraLayoutWrapper';
 import AdBanner from '../components/ads/AdBanner'; 
 
 export const metadata = {
-  title: 'Cinevisio | Watch Movies, Stream TV Series Free - Complete Movie Database',
-  description: 'Cinevisio is your ultimate movie database with 10,000+ movies, 5,000+ TV series, actor profiles, genre pages, and yearly archives. Discover, stream, and enjoy cinematic excellence with our comprehensive entertainment platform.',
-  keywords: 'movies, tv series, streaming, movie database, actors, genres, rankings, movie archives',
+  title: 'Watch Movies Online Free | Stream TV Series HD - Cinevisio',
+  description: 'Find where to watch movies & TV series online for free or on Netflix, Disney+, Prime Video. Cinevisio tracks 10,000+ movies, 5,000+ shows, box office results, actor info, and provides HD streaming guides across all genres (action, horror, romance, anime, drakor).',
   openGraph: {
-    title: 'Cinevisio | Complete Movie & TV Series Database',
-    description: 'Your ultimate destination for movies, TV series, actor profiles, and streaming information. Explore genres, yearly archives, and top rankings.',
+    title: 'Watch Movies Online Free | Stream TV Series HD - Cinevisio',
+    description: 'Find where to watch movies & TV series online for free or on Netflix, Disney+, Prime Video. Get streaming guides, actor profiles, and genre recommendations.',
     url: 'https://cinevisio.netlify.app',
     siteName: 'Cinevisio',
     images: [
@@ -19,7 +18,7 @@ export const metadata = {
         url: 'https://live.staticflickr.com/65535/55081939741_c1e4e196be_b.jpg',
         width: 1200,
         height: 630,
-        alt: 'Cinevisio - Complete Movie Database',
+        alt: 'Cinevisio - Watch Movies Online Free and Stream TV Series',
       },
     ],
     locale: 'en_US',
@@ -29,8 +28,8 @@ export const metadata = {
     card: 'summary_large_image',
     site: '@WatchStream123',
     creator: '@WatchStream123',
-    title: 'Cinevisio | Complete Movie & TV Series Database',
-    description: 'Explore 10,000+ movies, 5,000+ TV series, actor profiles, and streaming guides on Cinevisio.',
+    title: 'Watch Movies Online Free | Stream TV Series HD - Cinevisio',
+    description: 'Find where to watch movies & TV series online for free or on Netflix, Disney+, Prime Video. Streaming guides and recommendations.',
     images: ['https://live.staticflickr.com/65535/55081939741_c1e4e196be_b.jpg'],
   },
   // Tambahkan tag meta eksplisit untuk Facebook
@@ -48,6 +47,38 @@ export default async function RootLayout({ children }) {
     <html lang="en">
       <head>
         <meta name="google-site-verification" content="CpLE4QUD_fxLAV31KZi1i5v0dPZntXH78MwOxJPnXtU" />
+        {/* Structured Data untuk SEO */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebSite",
+              "name": "Cinevisio",
+              "url": "https://cinevisio.netlify.app",
+              "potentialAction": {
+                "@type": "SearchAction",
+                "target": "https://cinevisio.netlify.app/search?q={search_term_string}",
+                "query-input": "required name=search_term_string"
+              },
+              "description": "Find where to watch movies & TV series online for free or on Netflix, Disney+, Prime Video.",
+              "keywords": "watch movies, stream TV series, movie database, where to watch, streaming guide"
+            })
+          }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              "name": "Cinevisio",
+              "url": "https://cinevisio.netlify.app",
+              "logo": "https://live.staticflickr.com/65535/55081939741_c1e4e196be_b.jpg",
+              "description": "Streaming guide and movie database"
+            })
+          }}
+        />
       </head>
       <body>
         <AdsterraLayoutWrapper countryCode={countryCode}>
