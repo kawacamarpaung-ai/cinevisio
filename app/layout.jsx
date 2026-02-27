@@ -6,19 +6,20 @@ import AdsterraLayoutWrapper from '../components/layout/AdsterraLayoutWrapper';
 import AdBanner from '../components/ads/AdBanner'; 
 
 export const metadata = {
-  title: 'Watch Movies Online Free | Stream TV Series HD - Cinevisio',
-  description: 'Find where to watch movies & TV series online for free or on Netflix, Disney+, Prime Video. Cinevisio tracks 10,000+ movies, 5,000+ shows, box office results, actor info, and provides HD streaming guides across all genres (action, horror, romance, anime, drakor).',
+  title: 'Watch Movies Online Free | Stream TV Series HD - CineVisio',
+  description: 'Find where to watch movies & TV series online for free or on Netflix, Disney+, Prime Video. CineVisio tracks 10,000+ movies, 5,000+ shows, box office results, actor info, and provides HD streaming guides across all genres (action, horror, romance, anime, drakor).',
+  keywords: 'watch movies, stream TV series, movie database, where to watch, streaming guide, Netflix, Disney+, Prime Video, free movies online, HD streaming, actor profiles, box office results',
   openGraph: {
-    title: 'Watch Movies Online Free | Stream TV Series HD - Cinevisio',
+    title: 'Watch Movies Online Free | Stream TV Series HD - CineVisio',
     description: 'Find where to watch movies & TV series online for free or on Netflix, Disney+, Prime Video. Get streaming guides, actor profiles, and genre recommendations.',
     url: 'https://cinevisio.netlify.app',
-    siteName: 'Cinevisio',
+    siteName: 'CineVisio',
     images: [
       {
-        url: 'https://live.staticflickr.com/65535/55081939741_c1e4e196be_b.jpg',
+        url: 'https://live.staticflickr.com/65535/54797489364_45a23b2498_b.jpg',
         width: 1200,
         height: 630,
-        alt: 'Cinevisio - Watch Movies Online Free and Stream TV Series',
+        alt: 'CineVisio - Watch Movies Online Free and Stream TV Series',
       },
     ],
     locale: 'en_US',
@@ -28,9 +29,9 @@ export const metadata = {
     card: 'summary_large_image',
     site: '@WatchStream123',
     creator: '@WatchStream123',
-    title: 'Watch Movies Online Free | Stream TV Series HD - Cinevisio',
+    title: 'Watch Movies Online Free | Stream TV Series HD - CineVisio',
     description: 'Find where to watch movies & TV series online for free or on Netflix, Disney+, Prime Video. Streaming guides and recommendations.',
-    images: ['https://live.staticflickr.com/65535/55081939741_c1e4e196be_b.jpg'],
+    images: ['https://live.staticflickr.com/65535/54797489364_45a23b2498_b.jpg'],
   },
   // Tambahkan tag meta eksplisit untuk Facebook
   other: {
@@ -46,7 +47,10 @@ export default async function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        <meta name="google-site-verification" content="CpLE4QUD_fxLAV31KZi1i5v0dPZntXH78MwOxJPnXtU" />
+        <meta name="google-site-verification" content="7WZfh2aCtk9XQObziZk0EbqlvPuYo1qHULjMDlIUw-Y" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="canonical" href="https://cinevisio.netlify.app" />
+        
         {/* Structured Data untuk SEO */}
         <script
           type="application/ld+json"
@@ -54,7 +58,7 @@ export default async function RootLayout({ children }) {
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "WebSite",
-              "name": "Cinevisio",
+              "name": "CineVisio",
               "url": "https://cinevisio.netlify.app",
               "potentialAction": {
                 "@type": "SearchAction",
@@ -72,10 +76,14 @@ export default async function RootLayout({ children }) {
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "Organization",
-              "name": "Cinevisio",
+              "name": "CineVisio",
               "url": "https://cinevisio.netlify.app",
-              "logo": "https://live.staticflickr.com/65535/55081939741_c1e4e196be_b.jpg",
-              "description": "Streaming guide and movie database"
+              "logo": "https://live.staticflickr.com/65535/54797489364_45a23b2498_b.jpg",
+              "description": "Streaming guide and movie database",
+              "sameAs": [
+                "https://twitter.com/WatchStream123",
+                "https://facebook.com/CineVisio"
+              ]
             })
           }}
         />
@@ -91,7 +99,7 @@ export default async function RootLayout({ children }) {
               <div className="max-w-7xl mx-auto px-4 flex justify-center">
                 <AdBanner 
                   adId="728x90_header"
-                  scriptKey="5d9f3d0f55bfc3e1408dc8cdbb687e63"
+                  scriptKey="29ac0016876e4e46a9e1233dc926c568"
                   height={90} 
                   width={728}
                   className="rounded-lg overflow-hidden shadow-lg"
@@ -104,7 +112,7 @@ export default async function RootLayout({ children }) {
             </main>
             
             <footer className="w-full max-w-7xl mx-auto px-4 py-8">
-              <div id="container-a52ccbacbc0d553d99e20f9a168d288f"></div>
+              <div id="container-4a5705cdb7bbadd6a7add349c1b9a244"></div>
               <Footer />
             </footer>
           </div>
